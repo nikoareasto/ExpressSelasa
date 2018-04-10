@@ -1,5 +1,8 @@
-//add database
-require('./config/db')
+//add database mongoDB
+// require('./config/db')
+
+// add database mySql
+require('./config/dbMySql')
 
 // calling library
 const express = require('express')
@@ -8,7 +11,12 @@ const bodyParser = require('body-parser')
 
 // hasil compile nya express dimasukan ke variable app
 const app = express()
-const router = require('./config/routes')
+
+// router mongoDB
+// const router = require('./config/routes')
+
+// router mySql
+const router = require('./config/routesSql')
 
 // define port to 3000 example for run
 app.set('port', 3000)
