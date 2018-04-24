@@ -21,6 +21,7 @@ sequelize
 // IMPORT YOUR SCHEMA HERE
 const db = {
     Brand: sequelize.import(path.join(__dirname, '../app/models/myBrand.model')),
+    User: sequelize.import(path.join(__dirname, '../app/models/myUser.model')),
 
     // Export Database itself
     sequelize,

@@ -19,7 +19,7 @@ const app = express()
 const router = require('./config/routesSql')
 
 // define port to 3000 example for run
-app.set('port', 3000)
+app.set('port', 3001)
 
 // logger for every request
 app.use((req, res, next) => {
